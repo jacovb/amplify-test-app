@@ -60,7 +60,7 @@ function App() {
       <button onClick={createNote}>Create Note</button>
       <div style={{ marginBottom: 30 }}>
         {notes.map((note) => (
-          <div key={note.id || note.name}>
+          <div key={note.id}>
             <h2>{note.name}</h2>
             <p>{note.description}</p>
             <button onClick={() => deleteNote(note)}>Delete Note</button>
